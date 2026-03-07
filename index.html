@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TrustChain AI</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800;900&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div class="global-feed" id="globalFeed"></div>
+
+  <nav class="navbar" id="navbar">
+    <div class="nav-logo">🛡️ <span>TrustChain <span class="logo-ai">AI</span></span></div>
+    <div class="nav-links">
+      <a href="#" onclick="goTo(0)">Home</a>
+      <a href="#" onclick="goTo(1)">Problem</a>
+      <a href="#" onclick="goTo(2)">How It Works</a>
+      <a href="#" onclick="goTo(3)">Try It Live</a>
+    </div>
+    <div class="nav-dots">
+      <span class="dot" id="dot0" onclick="goTo(0)"></span>
+      <span class="dot" id="dot1" onclick="goTo(1)"></span>
+      <span class="dot" id="dot2" onclick="goTo(2)"></span>
+      <span class="dot" id="dot3" onclick="goTo(3)"></span>
+    </div>
+  </nav>
+
+  <!-- SECTION 1 INTRO -->
+  <section class="section" id="sec1">
+    <video autoplay muted loop playsinline id="bg-video">
+      <source src="bgbgbg.mp4" type="video/mp4">
+    </video>
+    <div class="overlay"></div>
+    <div class="intro-center">
+      <div class="glass-box">
+        <div class="stars" id="stars">
+          <span class="star">★</span>
+          <span class="star">★</span>
+          <span class="star">★</span>
+          <span class="star">★</span>
+          <span class="star">★</span>
+        </div>
+        <div class="title" id="title">
+          <h1>TrustChain <span class="accent">AI</span></h1>
+          <p>Detecting Fake Review Networks in E-commerce</p>
+          <div class="tag-line">
+            <span class="tag-dot"></span> Powered by Google Gemini
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-hint" onclick="goTo(1)">
+      <div class="scroll-arrow">↓</div>
+      <div class="scroll-text">Scroll Down</div>
+    </div>
+  </section>
+
+  <!-- SECTION 2 PROBLEM -->
+  <section class="section stack-section" id="sec2">
+    <div class="overlay sec2-overlay"></div>
+    <div class="sec-center">
+      <div class="glass-card problem-card">
+        <div class="sec-tag">
+          <span class="tag-dot red-dot"></span> The Problem
+        </div>
+        <h2 class="sec-title">Fake Reviews Are <span class="accent-red">Everywhere</span></h2>
+        <p class="sec-para">
+          Millions of shoppers are deceived daily by fake, paid, and AI-generated reviews on
+          platforms like Amazon and Flipkart. These reviews manipulate buying decisions,
+          destroy trust, and cost genuine sellers their reputation.
+        </p>
+        <div class="stats-grid">
+          <div class="stat-box">
+            <div class="stat-num red-num" data-target="40">0</div>
+            <div class="stat-unit">%</div>
+            <div class="stat-label">of all reviews<br>are FAKE</div>
+          </div>
+          <div class="stat-box">
+            <div class="stat-num red-num" data-target="68">0</div>
+            <div class="stat-unit">%</div>
+            <div class="stat-label">shoppers have<br>been deceived</div>
+          </div>
+          <div class="stat-box">
+            <div class="stat-num cyan-num" data-target="6">0</div>
+            <div class="stat-unit">.3T</div>
+            <div class="stat-label">e-commerce<br>market affected</div>
+          </div>
+          <div class="stat-box">
+            <div class="stat-num cyan-num" data-target="20">0</div>
+            <div class="stat-unit">+</div>
+            <div class="stat-label">AI signals<br>we detect</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-hint" onclick="goTo(2)">
+      <div class="scroll-arrow">↓</div>
+      <div class="scroll-text">Scroll Down</div>
+    </div>
+  </section>
+
+  <!-- SECTION 3 HOW IT WORKS -->
+  <section class="section stack-section" id="sec3">
+    <div class="overlay sec3-overlay"></div>
+    <div class="sec-center">
+      <div class="glass-card workflow-card">
+        <div class="workflow-left">
+          <div class="sec-tag">
+            <span class="tag-dot cyan-dot"></span> Workflow
+          </div>
+          <h2 class="sec-title">How It <span class="accent">Works?</span></h2>
+          <p class="sec-para">
+            TrustChain AI uses <strong>rule-based AI detection</strong>
+            to analyze product reviews in real-time, scanning for deceptive patterns
+            invisible to the human eye.
+          </p>
+          <p class="sec-para" style="margin-top:12px;">
+            Our system evaluates <strong>20+ linguistic signals</strong> — excessive punctuation,
+            vague superlatives, urgency language, and missing product specifics — to deliver
+            a <span class="green-text">REAL</span> or <span class="red-text">FAKE</span>
+            verdict with confidence score.
+          </p>
+          <div class="workflow-steps">
+            <div class="w-step">
+              <div class="w-num">01</div>
+              <div class="w-info">
+                <div class="w-title">Paste Review</div>
+                <div class="w-desc">Copy any review from Amazon, Flipkart or any platform</div>
+              </div>
+            </div>
+            <div class="w-step">
+              <div class="w-num">02</div>
+              <div class="w-info">
+                <div class="w-title">AI Analyzes</div>
+                <div class="w-desc">Scans 20+ language signals in milliseconds</div>
+              </div>
+            </div>
+            <div class="w-step">
+              <div class="w-num">03</div>
+              <div class="w-info">
+                <div class="w-title">Instant Verdict</div>
+                <div class="w-desc">FAKE or REAL with confidence score and reasons</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="workflow-right">
+          <div class="img-frame">
+            <img src="how-it-works.png"
+                 alt="TrustChain AI Workflow"
+                 class="workflow-img"
+                 onerror="this.style.display='none'; document.getElementById('imgPH').style.display='flex';">
+            <div class="img-placeholder" id="imgPH" style="display:none;">
+              <div class="ph-icon">🖼️</div>
+              <div class="ph-text">Place <code>how-it-works.png</code><br>in <code>C:\design\</code> folder</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-hint" onclick="goTo(3)">
+      <div class="scroll-arrow">↓</div>
+      <div class="scroll-text">Try It Live</div>
+    </div>
+  </section>
+
+  <!-- SECTION 4 LIVE ANALYZER -->
+  <section class="section stack-section" id="sec4">
+    <div class="overlay sec4-overlay"></div>
+    <div class="analyzer-center">
+      <div class="analyzer-top">
+        <div class="sec-tag">
+          <span class="tag-dot green-dot"></span> Live Demo
+        </div>
+        <h2 class="sec-title">Detect Fake <span class="accent">Reviews</span></h2>
+        <p class="analyzer-sub">Paste any review — watch the box turn RED or GREEN instantly</p>
+      </div>
+
+      <div class="search-box" id="searchBox">
+        <div class="search-left">
+          <span class="search-icon" id="searchIcon">🔍</span>
+          <textarea id="reviewInput" placeholder="Paste any product review here..." spellcheck="false"></textarea>
+        </div>
+        <button class="search-btn" id="analyzeBtn" onclick="analyzeReview()">Analyze</button>
+      </div>
+
+      <div class="status-label" id="statusLabel"></div>
+
+      <div class="chips-row">
+        <span class="chip-label">Try example:</span>
+        <button class="chip chip-fake" onclick="loadExample('fake1')">🚩 Fake Review</button>
+        <button class="chip chip-fake" onclick="loadExample('fake2')">🚩 Spam</button>
+        <button class="chip chip-real" onclick="loadExample('real1')">✅ Real Review</button>
+      </div>
+
+      <div class="loading-wrap" id="loadingWrap">
+        <div class="loader-ring"></div>
+        <span class="loader-text">Analyzing Review<span class="dots"></span></span>
+      </div>
+
+      <div class="error-box" id="errorBox"></div>
+
+      <div class="result-card" id="resultCard">
+        <div class="verdict-row">
+          <div class="verdict-badge" id="verdictBadge">
+            <span id="verdictIcon"></span>
+            <span id="verdictText"></span>
+          </div>
+          <div class="conf-block">
+            <div class="conf-label">Confidence</div>
+            <div class="conf-row">
+              <div class="conf-bar"><div class="conf-fill" id="confFill"></div></div>
+              <div class="conf-pct" id="confPct">0%</div>
+            </div>
+          </div>
+        </div>
+        <div class="result-summary" id="resultSummary"></div>
+        <div class="signals-title">🔬 Detected Signals</div>
+        <div id="signalsList"></div>
+        <button class="reset-btn" onclick="resetForm()">↩ Analyze Another Review</button>
+      </div>
+
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
